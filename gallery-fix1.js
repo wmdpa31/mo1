@@ -55,9 +55,9 @@ window.onload = () => {
     Kakao.Share.sendDefault({
       objectType: "feed",
       content: {
-        title: "김동동 ♥ 오아리의 모바일 청첩장",
-        description: "김동동 ♥ 오아리의 결혼식에 초대합니다.",
-        imageUrl: "img_2/01.png",
+        title: "장민석 ♥ 이지연의 모바일 청첩장",
+        description: "장민석 ♥ 이지연의 결혼식에 초대합니다.",
+        imageUrl: "img/wedding/cover.png",
         link: {
           mobileWebUrl: "https://mo1.luvle.co.kr",
           webUrl: "https://mo1.luvle.co.kr",

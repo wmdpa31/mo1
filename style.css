@@ -24,6 +24,10 @@
   margin: 0 0 10% 0;
 }
 
+.couple {
+  text-align: center;
+}
+
 #dash {
   width: 55px;
   height: 1px;
@@ -33,7 +37,7 @@
 
 #coverdisc {
   margin: 10% 0 5% 0;
-  line-height: 3.0rem;
+  line-height: 2.5rem;
   text-align: center;
 }
 
@@ -47,7 +51,7 @@
 }
 
 #gallerySection {
-  background-color: #fcf3e9;
+  background-color: #faecc5;
 }
 
 #gallery {
@@ -108,14 +112,10 @@
   border-radius: 15px;
 }
 
-#calendarSection {
-  background-color: dodgerblue;
-}
-
 #countdown {
   height: 140px;
   text-align: center;
-  background-color: #eddfd3;
+  background-color: white;
 
   table {
     width: 65%;
@@ -153,11 +153,11 @@
 }
 
 .countdownTimeInfo {
-  color: #6799ff;
+  color: #eda900;
 }
 
 #weddingHallCallInfo {
-  margin: 20% 0 2% 0;
+  margin: 10% 0 2% 10%;
   text-align: center;
 }
 
@@ -167,16 +167,17 @@
 }
 
 #weddingHallCallButton {
-  padding: 5px 15px 5px 15px;
+  /* padding: 5px 15px 5px 15px; */
   /* 버튼 내부의 여백을 조정합니다. */
   display: flex;
   justify-content: center;
+  background-color: white;
   align-items: center;
   width: 150px;
   border-radius: 15px;
-  border: 0.5px solid black;
+  /* border: 0.5px solid black; */
   /* 테두리 스타일을 설정합니다. */
-  background-color: transparent;
+  /* background-color: transparent; */
   /* 배경을 투명하게 설정합니다. */
 }
 
@@ -188,8 +189,8 @@
 }
 
 #locationSection {
-  background-color: #eaeaea;
-  height: 260px;
+  background-color: #faecc5;
+  height: 230px;
 }
 
 #map {
@@ -205,7 +206,7 @@ main {
 }
 
 #locationMoveSection {
-  background-color: #eaeaea;
+  background-color: #faecc5;
   /* height: 450px; */
   display: flex;
   flex-direction: column;
@@ -214,11 +215,22 @@ main {
   /* 요소들을 수평으로 정렬합니다. */
 }
 
-#locationMoveBox {
-  padding: 15px;
+#locationMoveBox1 {
+  padding: 7% 0 0 0;
   margin-top: 3%;
-  width: 300px;
-  height: 100px;
+  width: 330px;
+  height: 150px;
+  text-align: center;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+#locationMoveBox2 {
+  padding: 7% 0 0 0;
+  margin-top: 3%;
+  width: 330px;
+  height: 180px;
   text-align: center;
   background-color: white;
   justify-content: center;
@@ -242,7 +254,7 @@ main {
 }
 
 .accordion {
-  background-color: #eddfd3;
+  background-color: #ffe08c;
   color: black;
   cursor: pointer;
   padding: 0.8rem;
@@ -332,164 +344,6 @@ main {
   justify-content: center;
   /* 가로 가운데 정렬을 위한 justify-content 속성 추가 */
 }
-
-/*old*/
-/* html {
-  font-size: 16px;
-  font-weight: 400;
-  color: #222222;
-}
-body {
-  margin: 0;
-} */
-/* h2 {
-  font-size: 1.9rem;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  margin: 0;
-  padding: 0px 0px 12px 0px;
-  font-weight: 500;
-}
-h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #528b37;
-}
-
-h6 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 8px 0;
-} */
-/* p {
-  font-size: 1rem;
-  margin: 5px 0;
-  word-break: keep-all;
-  color: #333333;
-}
-.couplename {
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-} */
-/* .family {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-.familyname {
-  text-align: center;
-  font-size: 0.85rem;
-  font-weight: 500;
-  margin-bottom: 5px; */
-/* } */
-/* span {
-  font-size: 0.85rem;
-  font-weight: 500;
-} */
-/* a:link,
-a:visited {
-  color: #444444;
-}
-a:hover {
-  font-weight: 700;
-}
-a {
-  text-decoration: none;
-}
-* {
-  box-sizing: border-box;
-}
-ul {
-  padding: 0 0 0 1rem;
-  list-style-type: disc; */
-/* list-style: red; */
-/* } */
-
-/* li {
-  margin-bottom: 0.4rem;
-}
-li::marker {
-  color: #528b37;
-}
-#closing {
-  margin: 1.5rem 0;
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-align: center;
-}
-#closingname {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center;
-} */
-
-/* style */
-
-/* .artboard {
-  width: 900px;
-  margin: 0 auto;
-  font-family: "Noto Serif KR", serif;
-}
-
-.ContentsImgLandscape {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-height: 100%;
-  height: auto;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.ContentsImgCentered {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transform: translate(50%, 50%);
-  -ms-transform: translate(50%, 50%);
-  transform: translate(50%, 50%);
-} */
-
-/* .familynamecontainer {
-  width: 100%;
-}
-#familysection {
-  background-color: #f4f4f3;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-section {
-  padding: 2rem 8rem;
-} */
-
-/* .couple {
-  width: max-content;
-  margin: 0 auto;
-}
-
-
-.mapicon {
-  width: 100%;
-  margin: 0 1rem 0 0;
-}
-.maplink {
-  display: inline-block;
-} */
-
-/* .active,
-.accordion:hover {
-} */
-/* .MapIconContainer {
-  width: 200px;
-  background-color: #eaeaea;
-  height: 50px;
-  padding: 0;
-  margin: 0 1rem 0 0;
-  border-radius: 50px;
-} */
 
 @media (max-width: 960px) {
   .artboard {
