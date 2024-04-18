@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <title>김동동 ♥ 오아리의 결혼식에 초대합니다.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta
+      name="description"
+      content="평생을 같이하고 싶은 사람을 만났습니다.
+  서로 아껴주고 이해하며 사랑을 베풀며 살고 싶습니다.
+  저희 약속 위에 따뜻한 격려로 축복해 주셔서
+  힘찬 출발의 디딤이 되어 주십시오."
+    />
+    <link rel="canonical" href="https://mo1.luvle.co.kr" />
+    <meta property="og:url" content="https://mo1.luvle.co.kr" />
+    <meta
+      property="og:title"
+      content="장민석 ♥ 이지연의 결혼식에 초대합니다."
+    />
+    <meta
+      property="og:description"
+      content="네 있어서 내 삶이 아름다웠다
+      너를 사랑해서 많은 것을 사랑 할 수 있었다
+      나태주, <네가 웃으니 세상도 웃고 지구도 웃겠다>"
+    />
+    <meta property="og:image" content="img_2/01.png" />
+    <meta
+      property="og:site_name"
+      content="장민석 ♥ 이지연의 결혼식에 초대합니다."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- kakao API -->
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c2daa8b980cd01de4c366d51d8308efe"
+    ></script>
+    <script
+      src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.1/kakao.min.js"
+      integrity="sha384-kDljxUXHaJ9xAb2AzRd59KxjrFjzHa5TAoFQ6GbYTCAG0bjM55XohjjDT7tDDC01"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      Kakao.init("c2daa8b980cd01de4c366d51d8308efe");
+    </script>
+    <!-- naver API -->
+    <!-- <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=0rvojoros2"
+    ></script> -->
+    <!-- gallery -->
+    <script type="text/javascript" src="gallery-fix1.js"></script>
+    <!-- countdown -->
+    <script type="text/javascript" src="countdown-fix1.js"></script>
+    <!-- map -->
+    <script type="text/javascript" src="map-fix1.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <main>
+        <div>
+          <!-- Top 메인 사진 -->
+          <div style="width: 100%">
+            <img src="img/wedding/01.png" style="width: 100%; height: auto" />
+          </div>
+
+          <!-- 결혼 정보 -->
+          <section
+            id="wedding-desc-section"
+            class="flex justify-center"
+            style="background-color: white"
+          >
+            <div id="weddingDesc">
+              <h5 id="titleInfo">저희 결혼식에 초대합니다.</h5>
+
+              <div id="dash"></div>
+              <div id="couplenamecontainer">
+                <div class="couple">
+                  <!-- <span> 신부 </span> -->
+                  <span class="couplename"> 장민석 </span>
+                </div>
+                <div class="couple">
+                  <!-- <span> 신랑 </span> -->
+                  <span class="couplename"> 이지연 </span>
+                </div>
+              </div>
+              <div id="dash"></div>
+              <div id="coverdisc">
+                <p id="coverdiscInfo">네가 있어서 내 삶이 아름다웠다</p>
+                <!-- <br /> -->
+                <p id="coverdiscInfo">
+                  너를 사랑해서 많은 것을 사랑 할 수 있었다
+                </p>
+                <!-- <br /> -->
+                <p id="coverdiscInfo">
+                  나태주, <네가 웃으니 세상도 웃고 지구도 웃겠다>
+                </p>
+                <br />
+                <p id="coverdiscInfo">물빛 푸른 여름날</p>
+                <!-- <br /> -->
+                <p id="coverdiscInfo">
+                  두 사람이 하나가 되어 새 삶을 시작합니다.
+                </p>
+                <!-- <br /> -->
+                <p id="coverdiscInfo">즐겁고 어려움을 함께하는 사랑을 배우며</p>
+              </div>
+              <div style="line-height: 40px; margin-top: 10%">
+                <p id="parentInfo">
+                  <span style="font-size: large">김가나 · 이동국</span
+                  >&nbsp;<span>의</span>
+                  <span style="font-size: large">장남</span
+                  >&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: large"
+                    >김동동</span
+                  >
+                  <span style="font-size: large"> · · · </span>
+                  <button id="man-call-button">
+                    <img
+                      src="img/call.png"
+                      alt="전화"
+                      style="width: 15px; height: 15px"
+                    />
+                  </button>
+                  <script>
+                    document
+                      .getElementById("man-call-button")
+                      .addEventListener("click", function () {
+                        var phoneNumber = "010-1234-5678";
+                        window.location.href = "tel:" + phoneNumber;
+                      });
+                  </script>
+                </p>
+                <p id="parentInfo">
+                  <span style="font-size: large">오정훈 · 김지나</span
+                  >&nbsp;<span>의</span>
+                  <span style="font-size: large">장녀</span
+                  >&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: large"
+                    >오아리</span
+                  >
+                  <span style="font-size: large"> · · · </span>
+                  <button id="woman-call-button">
+                    <img
+                      src="img/call.png"
+                      alt="전화"
+                      style="width: 15px; height: 15px"
+                    />
+                  </button>
+                  <script>
+                    document
+                      .getElementById("woman-call-button")
+                      .addEventListener("click", function () {
+                        var phoneNumber = "010-1234-5678";
+                        window.location.href = "tel:" + phoneNumber;
+                      });
+                  </script>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 갤러리 -->
+          <section id="gallerySection">
+            <section>
+              <div id="gallery">
+                <img src="img/wedding/6_2.jpg" title="TITLE 1" />
+                <img src="img/wedding/7_2.jpg" title="TITLE 2" />
+                <img src="img/wedding/11_2.jpg" title="TITLE 3" />
+                <img src="img/wedding/8_2.jpg" title="TITLE 4" />
+                <img
+                  id="addGalleyItem"
+                  class="hidden"
+                  src="img/wedding/17_2.jpg"
+                  title="TITLE 5"
+                />
+                <img
+                  id="addGalleyItem"
+                  class="hidden"
+                  src="img/wedding/12_2.jpg"
+                  title="TITLE 6"
+                />
+              </div>
+              <button id="showMoreBtn">더보기</button>
+              <button id="collapseBtn" style="display: none">접기</button>
+            </section>
+          </section>
+
+          <div>
+            <img
+              src="img/calendar.png"
+              alt="달력"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+
+          <!-- 결혼식 카운트 -->
+          <!-- <div id="countdown">
+          <span class="countdownTimeUnit">DAY</span><span class="countdownTimeUnit">HOUR</span><span
+            class="countdownTimeUnit">MIN</span>
+          <span class="countdownTimeUnit">SEC</span>
+          <br />
+          <span class="countdownTimeSub" id="daysLeft" style="color: #6799ff">00</span>:<span class="countdownTimeSub"
+            id="hoursLeft">00</span>:<span class="countdownTimeSub" id="minutesLeft">00</span>:
+          <span class="countdownTimeSub" id="secondsLeft">00</span>
+          <p id="countdownInfo">
+            결혼까지 남은 시간.
+            <span class="countdownTimeInfo" id="daysInfoLeft">00</span>일
+          </p>
+        </div> -->
+
+          <!-- 결혼식 카운트 -->
+          <div id="countdown">
+            <div class="flex justify-center">
+              <table class="text-center">
+                <tr>
+                  <th>DAY</th>
+                  <th></th>
+                  <th>HOUR</th>
+                  <th></th>
+                  <th>MIN</th>
+                  <th></th>
+                  <th>SEC</th>
+                </tr>
+                <tr>
+                  <td id="daysLeft" style="color: #6799ff">119</td>
+                  <td>:</td>
+                  <td id="hoursLeft">03</td>
+                  <td>:</td>
+                  <td id="minutesLeft">10</td>
+                  <td>:</td>
+                  <td id="secondsLeft">28</td>
+                </tr>
+              </table>
+            </div>
+            <p id="countdownInfo">
+              결혼까지 남은 시간.
+              <span class="countdownTimeInfo" id="daysInfoLeft">00</span>일
+            </p>
+          </div>
+
+          <!-- 오시는 길 -->
+          <section id="locationSection" class="flex justify-center">
+            <div>
+              <div style="padding: 25px 50px 30px 50px">
+                <h1 style="font-size: 20px; text-align: center">오시는 길</h1>
+                <div style="margin-top: 20px; text-align: center">
+                  <p>서울 강남구 논현동 104-1</p>
+                  <p style="font-weight: 500">무시컨벤션 2층 화이트홀</p>
+                </div>
+                <p id="weddingHallCallInfo">
+                  <button id="weddingHallCallButton">
+                    <img
+                      src="img/call.png"
+                      alt="전화"
+                      style="width: 10px; height: 10px"
+                    />
+                    02-841-4144
+                  </button>
+                  <script>
+                    document
+                      .getElementById("weddingHallCallButton")
+                      .addEventListener("click", function () {
+                        var phoneNumber = " 02-841-4144";
+                        window.location.href = "tel:" + phoneNumber;
+                      });
+                  </script>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 지도 -->
+          <div id="mapContainer">
+            <div id="map"></div>
+            <code id="snippet" class="snippet"></code>
+            <script id="code">
+              var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+                mapOption = {
+                  center: new kakao.maps.LatLng(37.506075, 127.06683), // 지도의 중심좌표
+                  level: 3, // 지도의 확대 레벨
+                };
+
+              var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+              // 마커가 표시될 위치입니다
+              var markerPosition = new kakao.maps.LatLng(37.506075, 127.06683);
+
+              // 마커를 생성합니다
+              var marker = new kakao.maps.Marker({
+                position: markerPosition,
+              });
+
+              // 마커가 지도 위에 표시되도록 설정합니다
+              marker.setMap(map);
+
+              // 네이버 지도
+              // var mapDiv = document.getElementById("map");
+              // var position = new naver.maps.LatLng(37.506075, 127.06683);
+              // var map = new naver.maps.Map("map", {
+              //   center: new naver.maps.LatLng(37.507314, 127.065247),
+              //   zoom: 16,
+              //   minZoom: 1, //지도의 최소 줌 레벨
+              //   logoControl: false, // 네이버 로고 표시 X
+              //   mapDataControl: false, // 지도 데이터 저작권 컨트롤 표시 X
+              //   zoomControlOptions: { position: 9 }, // 줌 컨트롤 우하단에 배치
+              // });
+              // var marker = new naver.maps.Marker({
+              //   position: new naver.maps.LatLng(37.506075, 127.06683),
+              //   map: map,
+              //   // position: cityhall,
+              // });
+            </script>
+          </div>
+
+          <!-- map 길찾기 -->
+          <div id="MapIconDiv">
+            <div>
+              <a class="maplink" href="https://kko.to/cvhuYiLP99">
+                <div>
+                  <button id="kakaoMapButton" type="button">
+                    <img
+                      src="img/kakao.png"
+                      alt="카카오맵"
+                      style="width: 25px; height: 25px"
+                    />
+                    &nbsp;카카오맵으로 보기
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- 이동수단 정보 -->
+          <section id="locationMoveSection" class="flex justify-center">
+            <div id="locationMoveBox">
+              <p id="locationMoveTitleInfo">지하철 & 버스</p>
+              <p id="locationMoveInfo">
+                영등포역 후문 2번 출구에서 마을버스 06번 탑승 <br />
+                삼성 래미안 아파트 1단지 하차
+              </p>
+            </div>
+            <div id="locationMoveBox">
+              <p id="locationMoveTitleInfo">무료 셔틀 버스</p>
+              <p id="locationMoveInfo">
+                1호선 대방역 3번출구, 7호선 보라매역 5번출구 <br />
+                예식 1시간 30분 전부터 10015분 간격으로 운행예정
+              </p>
+            </div>
+            <div id="locationMoveBox">
+              <p id="locationMoveTitleInfo">주차장</p>
+              <p id="locationMoveInfo">
+                자가용 이용시 주차직원 안내에 따라 해군호텔 W웨딜홀(2시간)
+                <br />
+                또는 예식장 건너편에 시간 제한 없이 무료 주차 가능합니다.
+              </p>
+            </div>
+          </section>
+          <!-- 계좌번호 -->
+          <section id="accountNumberSection">
+            <h5 id="accountNumberTitleInfo">계좌번호</h5>
+            <button class="accordion">
+              <p id="centerText">신랑 측 계좌번호 ∨</p>
+            </button>
+            <div class="panel">
+              <ul>
+                <li><strong>장민석</strong><br />농협은행 352-0544-9177-73</li>
+                <!-- <li>
+                  <strong>신랑 아버지</strong><br />신한은행 535512-01-184718
+                  (김만호)
+                </li> -->
+              </ul>
+            </div>
+            <button class="accordion">
+              <p id="centerText">신부 측 계좌번호 ∨</p>
+            </button>
+            <div class="panel">
+              <ul>
+                <li><strong>이지연</strong><br />신한은행 110-379-440682</li>
+                <!-- <li>
+                  <strong>신부 아버지</strong><br />농협 301819-52-029714
+                  (오석기)
+                </li>
+                <li>
+                  <strong>신부 어머니</strong><br />케이뱅크 893-254854-371
+                  (조민희)
+                </li> -->
+              </ul>
+            </div>
+            <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+
+              for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+            </script>
+
+            <!-- 공유하기 버튼 -->
+            <div class="total-button-container">
+              <div class="button-container">
+                <button id="snsButton" type="button" class="shareKt">
+                  <img
+                    src="img/kakao.png"
+                    alt="카카오톡"
+                    style="width: 25px; height: 25px"
+                  />
+                  카카오톡
+                </button>
+                <button id="snsButton" type="button" class="shareKs">
+                  <img
+                    src="img/kakaostory.png"
+                    alt="카카오스토리"
+                    style="width: 25px; height: 25px"
+                  />
+                  카카오스토리
+                </button>
+                <button id="snsButton" type="button" class="shareFb">
+                  <img
+                    src="img/facebook.png"
+                    alt="페이스북"
+                    style="width: 25px; height: 25px"
+                  />
+                  페이스북
+                </button>
+                <button id="snsButton" type="button" class="shareTwoG">
+                  <img
+                    src="img/sms.png"
+                    alt="문자전송"
+                    style="width: 25px; height: 25px"
+                  />
+                  2G 휴대폰 전송
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- 하단 로고 -->
+          <footer>
+            <div class="flex justify-center">
+              <a
+                href="https://www.instagram.com/luvle_studio?igsh=dG4zNzNkZzg4anll"
+              >
+                <img src="img/footer_logo.png" alt="러블 로고 이미지" />
+              </a>
+            </div>
+          </footer>
+        </div>
+      </main>
+    </div>
+    <!-- <div class="modal">
+      <div class="modal-body">
+        <h2>모달창 제목</h2>
+        <p>모달창 내용</p>
+      </div>
+    </div> -->
+  </body>
+</html>
