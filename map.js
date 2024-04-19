@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
   guideDiv.style.position = "absolute";
   guideDiv.style.zIndex = 1;
   guideDiv.style.display = "flex";
-  guideDiv.className = "flex justify-end items-center";
+  guideDiv.style.justifyContent = "flex-end";
+  guideDiv.className = "flex justify-center items-center";
 
   mapContainerElement.appendChild(guideDiv);
 });
