@@ -55,17 +55,14 @@
     <script>
       Kakao.init("c2daa8b980cd01de4c366d51d8308efe");
     </script>
-    <!-- naver API -->
-    <!-- <script
-      type="text/javascript"
-      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=0rvojoros2"
-    ></script> -->
-    <!-- gallery -->
-    <script type="text/javascript" src="gallery-fix1.js"></script>
-    <!-- countdown -->
+    <!-- 갤러리 -->
+    <script type="text/javascript" src="gallery.js"></script>
+    <!-- 카운트 다운 -->
     <script type="text/javascript" src="countdown-fix1.js"></script>
-    <!-- map -->
-    <script type="text/javascript" src="map-fix1.js"></script>
+    <!-- 지도 -->
+    <script type="text/javascript" src="map.js"></script>
+    <!-- 스크롤 애니메이션 -->
+    <script type="text/javascript" src="scroll.js"></script>
   </head>
 
   <body>
@@ -73,7 +70,7 @@
       <main>
         <div>
           <!-- Top 메인 사진 -->
-          <div style="width: 100%">
+          <div class="animate-on-scroll" style="width: 100%">
             <img
               src="img/wedding/cover.png"
               style="width: 100%; height: auto"
@@ -81,93 +78,98 @@
           </div>
 
           <!-- 결혼 정보 -->
+
           <section
             id="wedding-desc-section"
             class="flex justify-center"
             style="background-color: white"
           >
-            <div id="weddingDesc">
-              <h5 id="titleInfo">저희 결혼식에 초대합니다.</h5>
+            <div class="animate-on-scroll">
+              <div id="weddingDesc">
+                <h5 id="titleInfo">저희 결혼식에 초대합니다.</h5>
 
-              <div id="dash"></div>
-              <div id="couplenamecontainer">
-                <div class="couple">
-                  <!-- <span> 신부 </span> -->
-                  <span class="couplename"> 장민석 </span>
+                <div id="dash"></div>
+                <div id="couplenamecontainer">
+                  <div class="couple">
+                    <!-- <span> 신부 </span> -->
+                    <span class="couplename"> 장민석 </span>
+                  </div>
+                  <div class="couple">
+                    <!-- <span> 신랑 </span> -->
+                    <span class="couplename"> 이지연 </span>
+                  </div>
                 </div>
-                <div class="couple">
-                  <!-- <span> 신랑 </span> -->
-                  <span class="couplename"> 이지연 </span>
+                <div id="dash"></div>
+                <div id="coverdisc">
+                  <p id="coverdiscInfo">네가 있어서 내 삶이 아름다웠다</p>
+                  <p id="coverdiscInfo">
+                    너를 사랑해서 많은 것을 사랑 할 수 있었다
+                  </p>
+                  <p id="coverdiscInfo">
+                    나태주, <네가 웃으니 세상도 웃고 지구도 웃겠다>
+                  </p>
+                  <br />
+                  <p id="coverdiscInfo">물빛 푸른 여름날</p>
+                  <p id="coverdiscInfo">
+                    두 사람이 하나가 되어 새 삶을 시작합니다.
+                  </p>
+                  <p id="coverdiscInfo">
+                    즐겁고 어려움을 함께하는 사랑을 배우며
+                  </p>
+                  <p id="coverdiscInfo">행복으로 가득 채우겠습니다.</p>
+                  <p id="coverdiscInfo">축복하는 마음으로 찾아오셔서</p>
+                  <p id="coverdiscInfo">부부가 되는 첫 걸음을 함께해주세요.</p>
                 </div>
-              </div>
-              <div id="dash"></div>
-              <div id="coverdisc">
-                <p id="coverdiscInfo">네가 있어서 내 삶이 아름다웠다</p>
-                <p id="coverdiscInfo">
-                  너를 사랑해서 많은 것을 사랑 할 수 있었다
-                </p>
-                <p id="coverdiscInfo">
-                  나태주, <네가 웃으니 세상도 웃고 지구도 웃겠다>
-                </p>
-                <br />
-                <p id="coverdiscInfo">물빛 푸른 여름날</p>
-                <p id="coverdiscInfo">
-                  두 사람이 하나가 되어 새 삶을 시작합니다.
-                </p>
-                <p id="coverdiscInfo">즐겁고 어려움을 함께하는 사랑을 배우며</p>
-                <p id="coverdiscInfo">행복으로 가득 채우겠습니다.</p>
-                <p id="coverdiscInfo">축복하는 마음으로 찾아오셔서</p>
-                <p id="coverdiscInfo">부부가 되는 첫 걸음을 함께해주세요.</p>
-              </div>
-              <div style="line-height: 40px; margin-top: 10%">
-                <p id="parentInfo">
-                  <span style="font-size: large">장영걸 · 이미재</span
-                  >&nbsp;<span>의</span>&nbsp;
-                  <span style="font-size: large">&nbsp;아들</span
-                  >&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: large"
-                    >장민석</span
-                  >
-                  <span style="font-size: large"> · · · </span>
-                  <button id="man-call-button">
-                    <img
-                      src="img/call.png"
-                      alt="전화"
-                      style="width: 15px; height: 15px"
-                    />
-                  </button>
-                  <script>
-                    document
-                      .getElementById("man-call-button")
-                      .addEventListener("click", function () {
-                        var phoneNumber = "010-1234-5678";
-                        window.location.href = "tel:" + phoneNumber;
-                      });
-                  </script>
-                </p>
-                <p id="parentInfo">
-                  <span style="font-size: large">이규성 · 김순기</span
-                  >&nbsp;<span>의</span>&nbsp;
-                  <span style="font-size: large">&nbsp;&nbsp;딸</span
-                  >&nbsp;&nbsp;&nbsp;<span style="font-size: large"
-                    >&nbsp;&nbsp;&nbsp;이지연</span
-                  >
-                  <span style="font-size: large"> · · · </span>
-                  <button id="woman-call-button">
-                    <img
-                      src="img/call.png"
-                      alt="전화"
-                      style="width: 15px; height: 15px"
-                    />
-                  </button>
-                  <script>
-                    document
-                      .getElementById("woman-call-button")
-                      .addEventListener("click", function () {
-                        var phoneNumber = "010-1234-5678";
-                        window.location.href = "tel:" + phoneNumber;
-                      });
-                  </script>
-                </p>
+                <div style="line-height: 40px; margin-top: 10%">
+                  <p id="parentInfo">
+                    <span style="font-size: large">장영걸 · 이미재</span
+                    >&nbsp;<span>의</span>&nbsp;
+                    <span style="font-size: large">&nbsp;아들</span
+                    >&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: large"
+                      >장민석</span
+                    >
+                    <span style="font-size: large"> · · · </span>
+                    <button id="man-call-button">
+                      <img
+                        src="img/call.png"
+                        alt="전화"
+                        style="width: 15px; height: 15px"
+                      />
+                    </button>
+                    <script>
+                      document
+                        .getElementById("man-call-button")
+                        .addEventListener("click", function () {
+                          var phoneNumber = "010-1234-5678";
+                          window.location.href = "tel:" + phoneNumber;
+                        });
+                    </script>
+                  </p>
+                  <p id="parentInfo">
+                    <span style="font-size: large">이규성 · 김순기</span
+                    >&nbsp;<span>의</span>&nbsp;
+                    <span style="font-size: large">&nbsp;&nbsp;딸</span
+                    >&nbsp;&nbsp;&nbsp;<span style="font-size: large"
+                      >&nbsp;&nbsp;&nbsp;이지연</span
+                    >
+                    <span style="font-size: large"> · · · </span>
+                    <button id="woman-call-button">
+                      <img
+                        src="img/call.png"
+                        alt="전화"
+                        style="width: 15px; height: 15px"
+                      />
+                    </button>
+                    <script>
+                      document
+                        .getElementById("woman-call-button")
+                        .addEventListener("click", function () {
+                          var phoneNumber = "010-1234-5678";
+                          window.location.href = "tel:" + phoneNumber;
+                        });
+                    </script>
+                  </p>
+                </div>
               </div>
             </div>
           </section>
@@ -175,35 +177,39 @@
           <!-- 갤러리 -->
           <section id="gallerySection">
             <section>
-              <div id="gallery">
-                <img src="img/wedding/6_2.jpg" title="TITLE 1" />
-                <img src="img/wedding/7_2.jpg" title="TITLE 2" />
-                <img src="img/wedding/11_2.jpg" title="TITLE 3" />
-                <img src="img/wedding/8_2.jpg" title="TITLE 4" />
-                <img
-                  id="addGalleyItem"
-                  class="hidden"
-                  src="img/wedding/17_2.jpg"
-                  title="TITLE 5"
-                />
-                <img
-                  id="addGalleyItem"
-                  class="hidden"
-                  src="img/wedding/12_2.jpg"
-                  title="TITLE 6"
-                />
+              <div class="animate-on-scroll">
+                <div id="gallery">
+                  <img src="img/wedding/6_2.jpg" title="TITLE 1" />
+                  <img src="img/wedding/7_2.jpg" title="TITLE 2" />
+                  <img src="img/wedding/11_2.jpg" title="TITLE 3" />
+                  <img src="img/wedding/8_2.jpg" title="TITLE 4" />
+                  <img
+                    id="addGalleyItem"
+                    class="hidden"
+                    src="img/wedding/17_2.jpg"
+                    title="TITLE 5"
+                  />
+                  <img
+                    id="addGalleyItem"
+                    class="hidden"
+                    src="img/wedding/12_2.jpg"
+                    title="TITLE 6"
+                  />
+                </div>
               </div>
               <button id="showMoreBtn">더보기</button>
               <button id="collapseBtn" style="display: none">접기</button>
             </section>
           </section>
 
-          <div>
-            <img
-              src="img/calendar.png"
-              alt="달력"
-              style="width: 100%; height: 100%"
-            />
+          <div class="animate-on-scroll">
+            <div>
+              <img
+                src="img/calendar.png"
+                alt="달력"
+                style="width: 100%; height: 100%"
+              />
+            </div>
           </div>
 
           <!-- 결혼식 카운트 -->
@@ -238,7 +244,7 @@
 
           <!-- 오시는 길 -->
           <section id="locationSection" class="flex justify-center">
-            <div>
+            <div class="animate-on-scroll">
               <div style="padding: 25px 50px 30px 50px">
                 <h1 style="font-size: 20px; text-align: center">오시는 길</h1>
                 <div style="margin-top: 20px; text-align: center">
@@ -270,7 +276,7 @@
           </section>
 
           <!-- 지도 -->
-          <div id="mapContainer">
+          <div class="animate-on-scroll" id="mapContainer">
             <div id="map"></div>
             <code id="snippet" class="snippet"></code>
             <script id="code">
@@ -302,7 +308,7 @@
           </div>
 
           <!-- map 길찾기 -->
-          <div id="MapIconDiv">
+          <div class="animate-on-scroll" id="MapIconDiv">
             <div>
               <a class="maplink" href="https://kko.to/a3GQPSFTX7">
                 <div>
@@ -321,29 +327,31 @@
 
           <!-- 이동수단 정보 -->
           <section id="locationMoveSection" class="flex justify-center">
-            <div id="locationMoveBox1">
-              <p id="locationMoveTitleInfo">고속버스 및 시외버스</p>
-              <p id="locationMoveInfo">
-                고속버스 터미널 맞은 편 삼성디지털프라자 앞에서 <br />
-                500,502,511,513,516,747번 버스탑승 <br />
-                (조치원교원대학교,미호방면),충청대학교에서 하차(약 10분간격)<br />
-                하차 후 충청대 사거리 '우림조경건석'앞에서 514 버스 이용
-              </p>
-            </div>
-            <div id="locationMoveBox2">
-              <p id="locationMoveTitleInfo">기차</p>
-              <p id="locationMoveInfo">
-                청주역 : 택시 이용시(소요시간 약 5~10분), <br />
-                시내 버스 이용시 : 514번 버스탑승 후 학천리 하차 <br />
-                조치원역 : 택시 이용시(소요시간 약 10~13분), <br />
-                시내 , 좌석 버스 이용시 조치원역-502번 <br />
-                오송KTX역(경부선,호남석) : 오송 KTX역-511,747번 버스
-                탑승(청주방면) <br />
-                10~15분 간격 출발 충청대학교에서 하차(소요시간 약 13분) <br />
-                하차 후 충청대사거리 우림조경건설 앞에서 504번 버스이용
-              </p>
-            </div>
-            <!-- <div id="locationMoveBox">
+            <div class="animate-on-scroll">
+              <div id="locationMoveBox1">
+                <p id="locationMoveTitleInfo">고속버스 및 시외버스</p>
+                <p id="locationMoveInfo">
+                  고속버스 터미널 맞은 편 삼성디지털프라자 앞에서 <br />
+                  500,502,511,513,516,747번 버스탑승 <br />
+                  (조치원교원대학교,미호방면),충청대학교에서 하차(약
+                  10분간격)<br />
+                  하차 후 충청대 사거리 '우림조경건석'앞에서 514 버스 이용
+                </p>
+              </div>
+              <div id="locationMoveBox2">
+                <p id="locationMoveTitleInfo">기차</p>
+                <p id="locationMoveInfo">
+                  청주역 : 택시 이용시(소요시간 약 5~10분), <br />
+                  시내 버스 이용시 : 514번 버스탑승 후 학천리 하차 <br />
+                  조치원역 : 택시 이용시(소요시간 약 10~13분), <br />
+                  시내 , 좌석 버스 이용시 조치원역-502번 <br />
+                  오송KTX역(경부선,호남석) : 오송 KTX역-511,747번 버스
+                  탑승(청주방면) <br />
+                  10~15분 간격 출발 충청대학교에서 하차(소요시간 약 13분) <br />
+                  하차 후 충청대사거리 우림조경건설 앞에서 504번 버스이용
+                </p>
+              </div>
+              <!-- <div id="locationMoveBox">
               <p id="locationMoveTitleInfo">주차장</p>
               <p id="locationMoveInfo">
                 자가용 이용시 주차직원 안내에 따라 해군호텔 W웨딜홀(2시간)
@@ -351,29 +359,34 @@
                 또는 예식장 건너편에 시간 제한 없이 무료 주차 가능합니다.
               </p>
             </div> -->
+            </div>
           </section>
+
           <!-- 계좌번호 -->
           <section id="accountNumberSection">
-            <h5 id="accountNumberTitleInfo">계좌번호</h5>
-            <button class="accordion">
-              <p id="centerText">신랑 측 계좌번호 ∨</p>
-            </button>
-            <div class="panel">
-              <ul>
-                <li><strong>장민석</strong><br />농협은행 352-0544-9177-73</li>
-                <!-- <li>
+            <div class="animate-on-scroll">
+              <h5 id="accountNumberTitleInfo">계좌번호</h5>
+              <button class="accordion">
+                <p id="centerText">신랑 측 계좌번호 ∨</p>
+              </button>
+              <div class="panel">
+                <ul>
+                  <li>
+                    <strong>장민석</strong><br />농협은행 352-0544-9177-73
+                  </li>
+                  <!-- <li>
                   <strong>신랑 아버지</strong><br />신한은행 535512-01-184718
                   (김만호)
                 </li> -->
-              </ul>
-            </div>
-            <button class="accordion">
-              <p id="centerText">신부 측 계좌번호 ∨</p>
-            </button>
-            <div class="panel">
-              <ul>
-                <li><strong>이지연</strong><br />신한은행 110-379-440682</li>
-                <!-- <li>
+                </ul>
+              </div>
+              <button class="accordion">
+                <p id="centerText">신부 측 계좌번호 ∨</p>
+              </button>
+              <div class="panel">
+                <ul>
+                  <li><strong>이지연</strong><br />신한은행 110-379-440682</li>
+                  <!-- <li>
                   <strong>신부 아버지</strong><br />농협 301819-52-029714
                   (오석기)
                 </li>
@@ -381,37 +394,37 @@
                   <strong>신부 어머니</strong><br />케이뱅크 893-254854-371
                   (조민희)
                 </li> -->
-              </ul>
-            </div>
-            <script>
-              var acc = document.getElementsByClassName("accordion");
-              var i;
+                </ul>
+              </div>
+              <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
 
-              for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function () {
-                  this.classList.toggle("active");
-                  var panel = this.nextElementSibling;
-                  if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                  } else {
-                    panel.style.display = "block";
-                  }
-                });
-              }
-            </script>
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                    } else {
+                      panel.style.display = "block";
+                    }
+                  });
+                }
+              </script>
 
-            <!-- 공유하기 버튼 -->
-            <div class="total-button-container">
-              <div class="button-container">
-                <button id="snsButton" type="button" class="shareKt">
-                  <img
-                    src="img/kakao.png"
-                    alt="카카오톡"
-                    style="width: 25px; height: 25px"
-                  />
-                  카카오톡
-                </button>
-                <!-- <button id="snsButton" type="button" class="shareKs">
+              <!-- 공유하기 버튼 -->
+              <div class="total-button-container">
+                <div class="button-container">
+                  <button id="snsButton" type="button" class="shareKt">
+                    <img
+                      src="img/kakao.png"
+                      alt="카카오톡"
+                      style="width: 25px; height: 25px"
+                    />
+                    카카오톡
+                  </button>
+                  <!-- <button id="snsButton" type="button" class="shareKs">
                   <img
                     src="img/kakaostory.png"
                     alt="카카오스토리"
@@ -419,7 +432,7 @@
                   />
                   카카오스토리
                 </button> -->
-                <!-- <button id="snsButton" type="button" class="shareFb">
+                  <!-- <button id="snsButton" type="button" class="shareFb">
                   <img
                     src="img/facebook.png"
                     alt="페이스북"
@@ -427,26 +440,29 @@
                   />
                   페이스북
                 </button> -->
-                <button id="snsButton" type="button" class="shareTwoG">
-                  <img
-                    src="img/sms.png"
-                    alt="문자전송"
-                    style="width: 25px; height: 25px"
-                  />
-                  2G 휴대폰 전송
-                </button>
+                  <button id="snsButton" type="button" class="shareTwoG">
+                    <img
+                      src="img/sms.png"
+                      alt="문자전송"
+                      style="width: 25px; height: 25px"
+                    />
+                    2G 휴대폰 전송
+                  </button>
+                </div>
               </div>
             </div>
           </section>
 
           <!-- 하단 로고 -->
           <footer>
-            <div class="flex justify-center">
-              <a
-                href="https://www.instagram.com/luvle_studio?igsh=dG4zNzNkZzg4anll"
-              >
-                <img src="img/footer_logo.png" alt="러블 로고 이미지" />
-              </a>
+            <div class="animate-on-scroll">
+              <div class="flex justify-center">
+                <a
+                  href="https://www.instagram.com/luvle_studio?igsh=dG4zNzNkZzg4anll"
+                >
+                  <img src="img/footer_logo.png" alt="러블 로고 이미지" />
+                </a>
+              </div>
             </div>
           </footer>
         </div>
