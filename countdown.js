@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   function updateCountdown() {
-    // 결혼 날짜 설정 (년, 월(0부터 시작), 일)
-    const weddingDate = new Date(2024, 5, 15); // 예시: 2024년 10월 12일
+    // 결혼 날짜 설정 (년, 월(0부터 시작), 일, 시, 분)
+    const weddingDate = new Date(2024, 5, 15, 11, 30); // 예시: 2024년 10월 12일
 
     const currentDate = new Date();
     const timeDifference = weddingDate - currentDate;
