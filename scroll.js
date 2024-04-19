@@ -1,3 +1,15 @@
+// 페이지 로드 시에 애니메이션 적용
+document.addEventListener("DOMContentLoaded", function () {
+  // 애니메이션을 적용할 요소 선택
+  var elements = document.querySelectorAll(".animate-on-scroll");
+
+  // 각 요소에 대해 반복
+  elements.forEach(function (element) {
+    // visible 클래스 추가
+    element.classList.add("visible");
+  });
+});
+
 // 스크롤 이벤트 감지
 window.addEventListener("scroll", function () {
   // 애니메이션을 적용할 요소 선택
