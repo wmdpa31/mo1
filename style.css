@@ -1,4 +1,7 @@
-/*new*/
+body {
+  font-family: "GowunBatang", serif; /* 고운바탕 폰트 적용 */
+}
+
 .ContentsImgIssuePhoto {
   height: 70%;
 }
@@ -12,20 +15,21 @@
   margin: 10% 0;
 }
 
-#weddingDesc {
-  /* padding: 60px 20px 0px 20px; */
-}
-
 #titleInfo {
-  font-size: 17px;
+  font-size: 18px;
   /* line-height: 1.7rem; */
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   margin: 0 0 10% 0;
 }
 
 .couple {
   text-align: center;
+}
+
+.couplename {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 #dash {
@@ -216,10 +220,10 @@ main {
 }
 
 #locationMoveBox1 {
-  padding: 7% 0 0 0;
+  padding: 7% 0 7% 0;
   margin-top: 3%;
-  width: 330px;
-  height: 150px;
+  width: 390px;
+  height: auto;
   text-align: center;
   background-color: white;
   justify-content: center;
@@ -227,10 +231,10 @@ main {
 }
 
 #locationMoveBox2 {
-  padding: 7% 0 0 0;
+  padding: 7% 0 7% 0;
   margin-top: 3%;
-  width: 330px;
-  height: 180px;
+  width: 390px;
+  height: auto;
   text-align: center;
   background-color: white;
   justify-content: center;
@@ -238,13 +242,13 @@ main {
 }
 
 #locationMoveTitleInfo {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 13px;
   line-height: 2rem;
 }
 
 #locationMoveInfo {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #accountNumberSection {
@@ -272,12 +276,13 @@ main {
   /* 왼쪽 여백을 auto로 설정하여 가운데 정렬 */
   margin-right: auto;
   /* 오른쪽 여백을 auto로 설정하여 가운데 정렬 */
+  font-weight: 600;
 }
 
 #accountNumberTitleInfo {
   text-align: center;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .total-button-container {

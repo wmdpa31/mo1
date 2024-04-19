@@ -43,21 +43,12 @@ window.onload = () => {
 
   const btnShareKa = document.querySelector(".shareKt");
   btnShareKa.addEventListener("click", () => {
-    // Kakao.Share.sendDefault({
-    //   objectType: "text",
-    //   text: "김동동 ♥ 오아리의 결혼식에 초대합니다.",
-    //   link: {
-    //     mobileWebUrl: "https://mo1.luvle.co.kr",
-    //     webUrl: "https://mo1.luvle.co.kr",
-    //   },
-    // });
-
     Kakao.Share.sendDefault({
       objectType: "feed",
       content: {
         title: "장민석 ♥ 이지연의 모바일 청첩장",
-        description: "장민석 ♥ 이지연의 결혼식에 초대합니다.",
-        imageUrl: "img/wedding/cover.png",
+        description: "결혼식에 초대합니다.",
+        imageUrl: "../img/wedding/cover.png",
         link: {
           mobileWebUrl: "https://mo1.luvle.co.kr",
           webUrl: "https://mo1.luvle.co.kr",
@@ -66,6 +57,13 @@ window.onload = () => {
       buttons: [
         {
           title: "웹으로 보기",
+          link: {
+            mobileWebUrl: "https://mo1.luvle.co.kr",
+            webUrl: "https://mo1.luvle.co.kr",
+          },
+        },
+        {
+          title: "앱으로 보기",
           link: {
             mobileWebUrl: "https://mo1.luvle.co.kr",
             webUrl: "https://mo1.luvle.co.kr",
