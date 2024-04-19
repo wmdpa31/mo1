@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const mapContainerElement = document.getElementById("map");
-  
+
   const guideDiv = document.createElement("div");
   const spanElement = document.createElement("span");
   spanElement.style.color = "#000";
@@ -16,10 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
   guideDiv.style.backgroundColor = "rgba(220, 210, 180, 0.5)";
   guideDiv.style.width = "100%";
   guideDiv.style.opacity = 0.5;
-  guideDiv.style.position = 'absolute';
+  guideDiv.style.position = "absolute";
   guideDiv.style.zIndex = 1;
-  guideDiv.className = "flex justify-center items-center"
-  
+  guideDiv.className = "flex justify-right items-right";
+
   mapContainerElement.appendChild(guideDiv);
 });
-
