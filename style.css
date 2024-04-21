@@ -2,6 +2,17 @@ body {
   font-family: "GowunBatang", serif; /* 고운바탕 폰트 적용 */
 }
 
+.animate-on-scroll-main {
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 1s ease, transform 1s ease; /* 변화가 느리도록 조정 */
+}
+
+.animate-on-scroll-main.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(20px);
