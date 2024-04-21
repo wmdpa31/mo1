@@ -225,6 +225,7 @@ body {
   background-color: #eaeaea;
   height: 300px;
   position: relative;
+  height: 250px;
   /* 상대 위치 지정 */
 }
 

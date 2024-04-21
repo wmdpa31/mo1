@@ -47,7 +47,7 @@ window.onload = () => {
       objectType: "feed",
       content: {
         title: "장민석 ♥ 이지연의 모바일 청첩장",
-        description: "결혼식에 초대합니다 :)",
+        description: "결혼식에 초대합니다  :)",
         imageUrl: "img/wedding/cover.png",
         link: {
           mobileWebUrl: "https://mo1.luvle.co.kr",
