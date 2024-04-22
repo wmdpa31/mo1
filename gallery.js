@@ -34,7 +34,7 @@ window.onload = () => {
     showMoreBtn.style.borderRadius = '15px';
   });
 
-  const galleryImages = document.querySelectorAll('.gallery img');
+  const galleryImages = document.querySelectorAll('#gallery img');
   galleryImages.forEach((img) => {
     img.onclick = () => {
       img.classList.toggle('full');
