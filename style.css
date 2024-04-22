@@ -213,9 +213,10 @@ body {
   font-weight: 600;
 }
 
-#weddingHallCallInfo {
-  margin: 10% 0 0 17%;
-  text-align: center;
+.weddinghall-call-info {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 #weddingHallCallButton img {
@@ -249,7 +250,7 @@ body {
 }
 
 #locationSection {
-  margin-top: 10%;
+  margin-top: 3%;
   background-color: #f9f0d8;
   height: 265px;
 }
@@ -268,7 +269,6 @@ main {
 
 #locationMoveSection {
   background-color: #f9f0d8;
-  /* height: 450px; */
   display: flex;
   flex-direction: column;
   /* 요소들을 수직으로 정렬합니다. */
@@ -452,7 +452,7 @@ main {
   }
 
   section {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     text-align: center;
   }
 
