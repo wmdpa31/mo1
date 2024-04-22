@@ -1,11 +1,13 @@
 body {
-  font-family: "GowunBatang", serif; /* 고운바탕 폰트 적용 */
+  font-family: "GowunBatang", serif;
+  /* 고운바탕 폰트 적용 */
 }
 
 .animate-on-scroll-main {
   opacity: 0;
   transform: translateY(-50%);
-  transition: opacity 1s ease, transform 1s ease; /* 변화가 느리도록 조정 */
+  transition: opacity 1s ease, transform 1s ease;
+  /* 변화가 느리도록 조정 */
 }
 
 .animate-on-scroll-main.visible {
@@ -22,6 +24,23 @@ body {
 .animate-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.arrow {
+  position: absolute;
+  transform: rotate(0);
+  transition-duration: 0.5s;
+  transform-origin: center center;
+  right: 2rem;
+  width: 13px;
+  height: 10px;
+  background-image: url('./img/arrow.png');
+  background-size: cover;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
 }
 
 .ContentsImgIssuePhoto {
@@ -258,9 +277,10 @@ main {
 }
 
 #locationMoveBox1 {
-  padding: 7% 0 7% 0;
+  padding-top: 7%;
+  padding-bottom: 7%;
   margin-top: 3%;
-  width: 390px;
+  width: 100%;
   height: auto;
   text-align: center;
   background-color: white;
@@ -269,10 +289,10 @@ main {
 }
 
 #locationMoveBox2 {
-  padding: 7% 0 7% 0;
+  padding-top: 7%;
+  padding-bottom: 7%;
   margin-top: 3%;
-  width: 390px;
-  height: auto;
+  width: 100%;
   text-align: center;
   background-color: white;
   justify-content: center;
@@ -311,6 +331,12 @@ main {
   justify-content: space-between;
   /* 내용을 좌우로 분산 정렬 */
   align-items: center;
+
+  &.active {
+    .arrow {
+      rotate: 180deg;
+    }
+  }
 }
 
 #centerText {
@@ -362,11 +388,11 @@ main {
 }
 
 .panel {
-  padding: 5%;
-  display: none;
+  height: 0rem;
   background-color: white;
   overflow: hidden;
   line-height: 2;
+  transition: .5s ease-out;
 }
 
 .maplink {
@@ -420,7 +446,7 @@ main {
   }
 
   section {
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
     text-align: center;
   }
 
