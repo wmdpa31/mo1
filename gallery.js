@@ -48,7 +48,9 @@ window.onload = () => {
       content: {
         title: "장민석 ♥ 이지연의 모바일 청첩장",
         description: "결혼식에 초대합니다♡",
-        imageUrl: "https://imgur.com/a/HGazJAH",
+        imageUrl: "https://i.imgur.com/JWVYIiU.png",
+        imageWidth: 1200,
+        imageHeight: 630,
         link: {
           mobileWebUrl: "https://mo1.luvle.co.kr",
           webUrl: "https://mo1.luvle.co.kr",
@@ -56,14 +58,7 @@ window.onload = () => {
       },
       buttons: [
         {
-          title: "웹으로 보기",
-          link: {
-            mobileWebUrl: "https://mo1.luvle.co.kr",
-            webUrl: "https://mo1.luvle.co.kr",
-          },
-        },
-        {
-          title: "앱으로 보기",
+          title: "자세히 보기",
           link: {
             mobileWebUrl: "https://mo1.luvle.co.kr",
             webUrl: "https://mo1.luvle.co.kr",
