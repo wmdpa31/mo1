@@ -1,5 +1,5 @@
 body {
-  font-family: "GowunBatang", serif;
+  font-family: 'GowunBatang', serif;
   /* 고운바탕 폰트 적용 */
 }
 
@@ -103,10 +103,10 @@ body {
 
 #gallerySection {
   background-color: #f9f0d8;
-  padding-top: 10%;
+  padding-top: 20%;
 }
 
-.gallery {
+#gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 5px;
@@ -119,14 +119,14 @@ body {
 }
 
 /* (B) GALLERY IMAGES */
-.gallery img {
+#gallery img {
   width: 100%;
-  height: 180px;
+  height: 100%;
   object-fit: cover;
 }
 
 /* (E) FULLSCREEN MODE */
-.gallery img.full {
+#gallery img.full {
   position: fixed;
   top: 0;
   left: 0;
@@ -137,7 +137,7 @@ body {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.gallery img.full:hover {
+#gallery img.full:hover {
   z-index: 999;
   transform: none;
 }
@@ -169,7 +169,7 @@ body {
 }
 
 #countdown {
-  height: 140px;
+  height: 180px;
   text-align: center;
   background-color: white;
 
@@ -392,7 +392,7 @@ main {
   background-color: white;
   overflow: hidden;
   line-height: 2;
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .maplink {
@@ -424,11 +424,11 @@ main {
   /* 가로 가운데 정렬을 위한 justify-content 속성 추가 */
 }
 
-#galleryImages {
+/* #galleryImages {
   overflow: hidden;
   height: 370px;
-  transition: .5s ease-out;
-}
+  transition: 0.5s ease-out;
+} */
 
 @media (max-width: 960px) {
   .artboard {
@@ -452,11 +452,15 @@ main {
   }
 
   section {
-    padding: 2rem 2rem;
+    /* padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px; */
+    padding: 2.5rem 2rem;
     text-align: center;
   }
 
-  .gallery {
+  #gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
