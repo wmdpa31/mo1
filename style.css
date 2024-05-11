@@ -471,3 +471,23 @@ main {
     /* padding: 0 15px; */
   }
 }
+
+.swiper-container {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+}

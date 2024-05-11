@@ -34,13 +34,6 @@ window.onload = () => {
     showMoreBtn.style.borderRadius = '15px';
   });
 
-  const galleryImages = document.querySelectorAll('#gallery img');
-  galleryImages.forEach((img) => {
-    img.onclick = () => {
-      img.classList.toggle('full');
-    };
-  });
-
   const btnShareKa = document.querySelector('.shareKt');
   btnShareKa.addEventListener('click', () => {
     Kakao.Share.sendDefault({
@@ -89,5 +82,30 @@ window.onload = () => {
     const message = '모바일 청첩장을 확인해주세요! ' + window.location.href;
     const link = 'sms:?body=' + encodeURIComponent(message);
     window.location.href = link;
+  });
+
+  const swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
+  const documentBody = document.querySelector('body');
+
+  const outsideModal = document.querySelector('.swiper');
+  outsideModal.addEventListener('click', function (event) {
+    if (event.target.classList.contains('swiper-slide')) {
+      outsideModal.style.display = 'none';
+      documentBody.style.overflow = 'auto';
+    }
+  });
+
+  const galleryImages = document.querySelectorAll('#gallery img');
+  galleryImages.forEach((img, index) => {
+    img.onclick = () => {
+      swiper.slideTo(index);
+      outsideModal.style.display = 'block';
+      documentBody.style.overflow = 'hidden';
+    };
   });
 };
